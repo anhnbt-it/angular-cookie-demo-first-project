@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-first-cookie-project": {
+    "angular-cookie-demo-first-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-first-cookie-project",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,22 +75,22 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-first-cookie-project:build:production"
+              "browserTarget": "angular-cookie-demo-first-project:build:production"
             },
             "development": {
-              "browserTarget": "my-first-cookie-project:build:development"
+              "browserTarget": "angular-cookie-demo-first-project:build:development"
             }
           },
           "defaultConfiguration": "development",
           "options": {
             "port": 4101,
-            "host": "first-cookie-site.dev"
+            "host": "localhost"
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-first-cookie-project:build"
+            "browserTarget": "angular-cookie-demo-first-project:build"
           }
         },
         "test": {
@@ -114,5 +114,5 @@
       }
     }
   },
-  "defaultProject": "my-first-cookie-project"
+  "defaultProject": "angular-cookie-demo-first-project"
 }

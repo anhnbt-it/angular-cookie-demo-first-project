@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'my-first-cookie-project'`, () => {
+  it(`should have as title 'angular-cookie-demo-first-project'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-first-cookie-project');
+    expect(app.title).toEqual('angular-cookie-demo-first-project');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-first-cookie-project app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-cookie-demo-first-project app is running!');
   });
 });
