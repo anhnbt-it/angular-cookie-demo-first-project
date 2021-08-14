@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "632fd9ce-ea01-4757-9941-59e06d0b8415"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -78,7 +81,11 @@
               "browserTarget": "my-first-cookie-project:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4101,
+            "host": "first-cookie-site.dev"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
